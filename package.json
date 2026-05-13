@@ -1,0 +1,32 @@
+{
+  "name": "ticketing-platform-monorepo",
+  "description": "Dynamic event ticketing platform with intelligent pricing - Assignment starter",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Minsky Digital Labs",
+    "email": "reneeth@minsky.in",
+    "url": "https://minsky.in"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/ticketing-platform-monorepo"
+  },
+  "scripts": {
+    "build": "npx --yes pnpm@9.14.4 exec turbo run build",
+    "dev": "npx --yes pnpm@9.14.4 exec turbo run dev",
+    "lint": "npx --yes pnpm@9.14.4 exec turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "npx --yes pnpm@9.14.4 exec turbo run check-types",
+    "test": "npx --yes pnpm@9.14.4 exec turbo run test"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.8",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
