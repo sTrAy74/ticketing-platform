@@ -33,12 +33,12 @@ Full-stack event ticketing platform with dynamic pricing.
 - npm
 - Docker (for local Postgres via `docker compose`) or any running PostgreSQL instance
 
-## Installation (under 5 commands)
+## Installation
 
 1. Install dependencies
 
 ```bash
-npm install
+npx --yes pnpm@9.14.4 install
 ```
 
 2. Create env file
@@ -47,19 +47,7 @@ npm install
 cp .env.example .env
 ```
 
-3. Start PostgreSQL
-
-```bash
-docker compose up -d postgres
-```
-
-4. Push schema and seed data
-
-```bash
-set -a && source .env && set +a && npx --yes pnpm@9.14.4 --filter @repo/database db:push && npx --yes pnpm@9.14.4 --filter @repo/database db:seed
-```
-
-5. Start all apps
+3. Start all apps
 
 ```bash
 npm run dev
